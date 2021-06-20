@@ -13,7 +13,7 @@ class Products extends Component {
    }
 
    componentDidMount() {
-    axios.get('http://localhost:3001')
+    axios.get('http://localhost:3002')
      .then(response => {
       console.log(response.data);
        this.setState({ items: response.data });
@@ -41,11 +41,6 @@ class Products extends Component {
            <HotProduct  price={item.gia}  images="images/products/small/products-01.png" offer ={false}>{item.tensanpham}</HotProduct>
 
         ))}
-           {/* <HotProduct price ="2000" images="images/products/small/products-01.png" offer ={true}>Laptop</HotProduct>
-           <HotProduct  price="3000"  images="images/products/small/products-01.png" offer ={false}>phone</HotProduct>
-           <HotProduct price ="4000"  images="images/products/small/products-01.png" offer ={true}>aipad</HotProduct>
-           <HotProduct  price="5000"   images="images/products/small/products-01.png" offer={true} >ipod</HotProduct>
-            <HotProduct /> */}
           
       
   
