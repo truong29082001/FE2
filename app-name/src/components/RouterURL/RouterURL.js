@@ -16,25 +16,16 @@ import Products from '../products/Products';
 class RouterURL extends Component {
     render() {
         return (
-   
              <div>
                    <Switch>
                    <Route path="/cart"> <Cart/> </Route>
-             <Route path="/Contact"> <Contact /></Route>
-          <Route path="/CheckOut2">  <CheckOut2 /> </Route>
-          <Route path="/ProductList"> <ProductList /> </Route>
-          
-          <Route path="/"> <Products /> </Route>
-         
-          
-          <Route> < Products/> </Route>
-        
-          
-          
+                    <Route path="/Contact"> <Contact /></Route>
+                    <Route path="/CheckOut2">  <CheckOut2 /> </Route>
+                    <Route path="/ProductList"> <ProductList /> </Route>
+                    <Route path="/"> <Products /> </Route>
+                    <Route> < Products/> </Route>
           </Switch>
              </div>
-      
-          
         );
     }
 }
